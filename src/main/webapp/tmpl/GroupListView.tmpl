@@ -1,0 +1,20 @@
+<script id="GroupListView" type="text/html">
+<div class="GroupListView">
+    <h2>Groups</h2>
+    <ul>
+    {{> GroupListView-list}}
+    </ul>
+    <div class="add-new-group">
+        <a class="action">Add New Group</a>
+        <input type="text" class="form-control">
+    </div>
+</div>
+</script>
+
+<script id="GroupListView-list" type="text/html">
+    {{#each groups}}
+    <li class="group" data-entity="Group" data-entity-id="{{id}}">
+        <a href="#group/{{id}}"">{{groupName}}</a>
+    </li>
+    {{/each}}
+</script>

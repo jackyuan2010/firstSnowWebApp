@@ -1,0 +1,48 @@
+/* --------- Variables --------- */
+/* --------- /Variables --------- */
+/* --------- Mixins --------- */
+/* --------- /Mixins --------- */
+.GroupListView {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url(images/nav-bg.png);
+  border-right: solid 1px #b3c5d3;
+}
+.GroupListView > h2 {
+  margin: 0;
+  padding: 15px 5px;
+  font-size: 16px;
+  border-bottom: solid 1px #b3c5d3;
+}
+.GroupListView ul {
+  margin: 0;
+  padding: 0;
+}
+.GroupListView ul li {
+  padding: 7px 15px;
+  border-bottom: solid 1px #b3c5d3;
+}
+.GroupListView ul li.active {
+  background: #ddd;
+}
+.GroupListView ul li.active a {
+  color: #333;
+}
+.GroupListView .add-new-group {
+  margin: 10px;
+}
+.GroupListView .add-new-group a {
+  float: right;
+}
+.GroupListView .add-new-group input {
+  display: none;
+}
+.GroupListView .add-new-group.active a {
+  display: none;
+}
+.GroupListView .add-new-group.active input {
+  display: block;
+}

@@ -1,0 +1,124 @@
+/* --------- Variables --------- */
+@text-action-link: #2a6496;
+
+/* --------- /Variables --------- */
+
+/* --------- Mixins --------- */
+.fitparent(){
+	position: absolute;
+	top: 0; right: 0; bottom: 0; left: 0;
+}
+
+.clearfix() {
+	&:before,
+	&:after {
+		content: " "; // 1
+		display: table; // 2
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+.border-radius(@radius: 4px){
+	-webkit-border-radius: @radius;
+	-moz-border-radius:@radius;
+	border-radius:@radius;
+}
+
+.transform(@transform){
+	-webkit-transform: @transform;
+	-moz-transform:@transform;
+	transform:@transform;
+}
+
+.primary-button(){
+	width: 72px;
+	height: 24px;
+	background: #69AD44;
+	font-size: 13px;
+	font-weight: 400;
+	text-align: center;
+	color: #fff;
+	line-height:115%;
+	padding: 2px;
+	border: none;
+	.border-radius(2px);
+	-webkit-box-shadow: inset 1px 1px 3px 0px rgba(255, 255, 255, .5), 1px 1px 2px 0px rgba(0, 0, 0, .5);
+	box-shadow: inset 1px 1px 3px 0px rgba(255, 255, 255, .5), 1px 1px 2px 0px rgba(0, 0, 0, .5);
+}
+
+.primary-button-disabled(){
+	opacity: .5;
+	
+}
+
+.dialog-background(){
+	position: absolute;
+	left: 1px;
+	top: 1px;
+	bottom: 1px;
+	right: 1px;
+	.border-radius(3px);
+	background: #5F5F5F;
+	background: -moz-linear-gradient(top left, #616161, #313131);
+	background: -webkit-linear-gradient(top left, #616161, #313131);
+	box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.56);
+}
+
+.dialog-border(){
+	background: #979797;
+	background: linear-gradient(left top, #979797, #000);
+	background: -moz-linear-gradient(left top, #979797, #000); 
+	background: -webkit-gradient(linear, 0% 50%, 0% 100%, from(#979797), to(#000));
+	box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.56);
+	.border-radius(3px);
+	border: 0px;
+}
+
+.dialog-title(){
+	color: #fff;
+	font-size: 24px;
+	font-weight: 300;
+}
+
+.dialog-cancel(){
+	position: absolute;
+	right: 0px;
+	top: 4px;
+	cursor: pointer;
+	font-size: 10px;
+	width: 40px;
+	height: 32px;
+	padding: 10px 14px;
+}
+
+.dialog-done(){
+	position: absolute;
+	right: 16px;
+	bottom: 16px;
+}
+
+.link-background(){
+	position: absolute;
+	left: 1px;
+	top: 1px;
+	bottom: 1px;
+	right: 1px;
+	.border-radius(1px);
+	background: #696969;
+	background: -moz-linear-gradient(top left, #616161, #444);
+	background: -webkit-linear-gradient(top left, #616161, #444);
+	box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.56);
+}
+
+.link-border(){
+	background: #ccc;
+	background: linear-gradient(left top, #ccc, #333);
+	background: -moz-linear-gradient(left top, #ccc, #333); 
+	background: -webkit-gradient(linear, 0% 50%, 0% 100%, from(#ccc), to(#333));
+	box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.56);
+	.border-radius(1px);
+	border: 0px;
+}
+/* --------- /Mixins --------- */

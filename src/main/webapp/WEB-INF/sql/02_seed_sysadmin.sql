@@ -1,0 +1,1 @@
+insert into "user" (username, password, "firstName","lastName" ) values ('admin', 'welcome', 'Jack','Yuan');

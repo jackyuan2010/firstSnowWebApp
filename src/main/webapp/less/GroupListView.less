@@ -1,0 +1,56 @@
+@import "utils";
+
+.GroupListView{
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background: url(images/nav-bg.png);
+    border-right: solid 1px #b3c5d3;
+
+    & > h2{
+        margin: 0;
+        padding: 15px 5px;
+        font-size: 16px;
+        border-bottom: solid 1px #b3c5d3;
+    }
+
+    ul{
+        margin: 0;
+        padding: 0;
+
+        li{
+            padding: 7px 15px;
+            border-bottom: solid 1px #b3c5d3;
+        }
+
+        li.active{
+            background: #ddd;
+
+            a{
+                color: #333;
+            }
+        }
+    }
+
+    .add-new-group{
+        margin: 10px;
+
+        a{
+            float: right;
+        }
+
+        input{
+            display: none;
+        }
+    }
+
+    .add-new-group.active{
+
+        a{
+            display: none;
+        }
+
+        input{
+            display: block;
+        }
+    }
+}

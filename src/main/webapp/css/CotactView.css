@@ -1,0 +1,39 @@
+/* --------- Variables --------- */
+/* --------- /Variables --------- */
+/* --------- Mixins --------- */
+/* --------- /Mixins --------- */
+.ContactView {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url(images/content-bg.png);
+}
+.ContactView .contacts-Header {
+  position: relative;
+  height: 25px;
+}
+.ContactView .contacts-Header > h2 {
+  text-align: center;
+}
+.ContactView table {
+  margin: 15px 3px 0 3px;
+}
+.ContactView table th {
+  text-align: center;
+}
+.ContactView table ul {
+  list-style: none;
+}
+.ContactView table ul li {
+  float: left;
+  position: relative;
+  margin: 0 5px;
+}
+.ContactView table ul li a {
+  display: block;
+}
+.ContactView .active {
+  background: blue;
+}

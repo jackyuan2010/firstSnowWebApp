@@ -1,0 +1,45 @@
+<script id="ContactView" type="text/html">
+<div class="ContactView">
+    <div class="contacts-Header"><h2>Contacts</h2></div>
+    <ul>
+    {{#each groups}}
+    <li class="group" data-entity="Group" data-entity-id="{{id}}">
+        <a href="#group/{{id}}"">{{groupName}}</a>
+    </li>
+    {{/each}}
+    </ul>
+    <table class="contactTable">
+        <tbody>
+            <tr>
+                <th>Contact Name</th>
+                <th>Phone</th>
+                <th>OfficePhone</th>
+                <th>FamilyPhone</th>
+                <th>Address</th>
+            </tr>
+            {{#each contacts}}
+            <tr data-entity-id="{{id}}">
+                <td><input data-prop="contactName" value="{{contactName}}"/></td>
+                <td><input data-prop="phoneNO" value="{{phoneNO}}"/></td>
+                <td><input data-prop="officePhone" value="{{officePhone}}"/></td>
+                <td><input data-prop="familyPhone" value="{{familyPhone}}"/></td>
+                <td><input data-prop="contactAdd" value="{{contactAdd}}"/></td>
+            </tr>
+            {{/each}}
+            <tr data-entity-id="0">
+                <td><input data-prop="contactName" placeholder="New Contact" type="input"/></td>
+                <td><input data-prop="phoneNO" type="input" id="phoneNO"/></td>
+                <td><input data-prop="officePhone" type="input"/></td>
+                <td><input data-prop="familyPhone" type="input"/></td>
+                <td><input data-prop="contactAdd" type="input"/></td>
+                <td>
+                    <ul>
+                        <li><a class="save-ico">save</a></li>
+                        <li><a class="del-ico">del</a></li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</script>
